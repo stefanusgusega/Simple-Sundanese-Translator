@@ -29,7 +29,7 @@ def home():
 @app.route("/translate/<sent>/<indotosunda>/<met>",methods=["POST","GET"])
 def translate(sent,indotosunda,met):
     if (request.method == "GET"):
-        if (indotosunda):
+        if (indotosunda == "True"):
             if (met == "kmp"):
                 a = MatchWithKMP(sent,True)
                 a.solve()
