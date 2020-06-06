@@ -1,6 +1,6 @@
-from nltk import tokenize
+# from nltk import tokenize
 import re
-import os
+# import os
 
 class MatchWithRegex:
     def __init__(self,sentence,indotosunda):
