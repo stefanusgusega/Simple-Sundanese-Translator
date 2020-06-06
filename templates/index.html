@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Simple Sundanese Translator{% endblock %}
+{% block content %}
+<h1 style="text-align: center;">Simple Sundanese Translator</h1>
+<br><br>
+<p>
+    Translate!
+    <form action="#" method="POST">
+        <P><input type="text" name="sent"/></P>
+    Choose one of them:
+        <p><input type="submit" value="Indonesian - Sundanese (KMP)" title="Indonesian - Sundanese (KMP)" name="trans"/></p>
+        <p><input type="submit" value="Indonesian - Sundanese (Boyer-Moore)" title="Indonesian - Sundanese (Boyer-Moore)" name="trans"/></p>
+        <p><input type="submit" value="Indonesian - Sundanese (RegEx)" title="Indonesian - Sundanese (RegEx)" name="trans"/></p>
+        <p><input type="submit" value="Sundanese - Indonesian (KMP)" title="Sundanese - Indonesian (KMP)"name = "trans"/></p>
+        <p><input type="submit" value="Sundanese - Indonesian (Boyer-Moore)" title="Sundanese - Indonesian (Boyer-Moore)"name = "trans"/></p>
+        <p><input type="submit" value="Sundanese - Indonesian (RegEx)" title="Sundanese - Indonesian (RegEx)"name = "trans"/></p>
+    </form>
+</p>
+<!-- <form action="#" method="POST">
+    <p>Name:</p>
+    <p><input type="text" name="nm"/></p>
+    <p><input type="submit" value="submit"/></p>
+</form> -->
+{% endblock %}
